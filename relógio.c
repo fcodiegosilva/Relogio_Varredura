@@ -47,7 +47,7 @@ unsigned short horaDez=0, horaUnid=0, minDez=0, minUnid=0, segDez=0, segUnid=0;
 unsigned short aHoraDez=0, aHoraUnid=0, aMinDez=0, aMinUnid=0;
 
 
-short VarrerKey(void){
+short VarrerKey(void){  //Função para Varredura do teclado
 					
 	static unsigned char x = 0; 		
 	
@@ -157,7 +157,7 @@ short VarrerKey(void){
 	
 }
 
-void inic_regs (void){
+void inic_regs (void){   //Função para inicializar os pinos
 	
 	TRISA = 0x00;
 	TRISB =0x00;
@@ -173,7 +173,8 @@ void inic_regs (void){
 
 }
 
-void ativaDisplay(unsigned char d1, unsigned char d2, unsigned char d3, unsigned char d4){
+void ativaDisplay(unsigned char d1, unsigned char d2, unsigned char d3, unsigned char d4){  //Função para acender os displays 7seg
+																							//por varredura
 	
 	static unsigned char atual = 1;
 	const char numero[] = { 0x3F, 	//vetor com os codigos dos numeros para 7seg
@@ -299,7 +300,7 @@ void setRelogio (void){								//Funcão para atualizar a hora e alarme conforme 
 	
 }
 
-void atualizaDisplay(void){
+void atualizaDisplay(void){    //Verifica o modo e mostra no display
 	
 	if(modo == 0) ativaDisplay(horaDez,horaUnid,minDez,minUnid);			//Se modo = 0, mostra as horas
 	else if(modo == 1) ativaDisplay(minDez,minUnid,segDez,segUnid);			//Se modo = 1, mostra MM:SS
@@ -308,26 +309,30 @@ void atualizaDisplay(void){
 
 void atualizaHora(void){  //Função para incrementar a hora
 
-	segUnid++;
-	if(segUnid>=10){
-		segUnid=0;
-		segDez++;
-		if(segDez>=6){
-			segDez=0;
-			minUnid++;
-			if(minUnid>=10){
-				minUnid=0;
-				minDez++;
-				if(minDez>=6){
-					minDez = 0;
-					horaUnid++;
-					if(horaUnid>=10){
-						horaUnid=0;
-						horaDez++;
-					}
-					else if(horaDez==2 && horaUnid==4){   
-						horaDez=0;
-						horaUnid=0;
+	pisca++;
+	if(pisca >= 2 ){
+		pisca = 0;
+		segUnid++;
+		if(segUnid>=10){
+			segUnid=0;
+			segDez++;
+			if(segDez>=6){
+				segDez=0;
+				minUnid++;
+				if(minUnid>=10){
+					minUnid=0;
+					minDez++;
+					if(minDez>=6){
+						minDez = 0;
+						horaUnid++;
+						if(horaUnid>=10){
+							horaUnid=0;
+							horaDez++;
+						}
+						else if(horaDez==2 && horaUnid==4){   
+							horaDez=0;
+							horaUnid=0;
+						}
 					}
 				}
 			}
@@ -348,14 +353,13 @@ void main (void){
 		
 		Delay1KTCYx(8);  								//delay de 4ms
 
-		if(cont!=240) cont++;   						//Incrementa contador
-		else{											//Quando contador = 240
+		if(cont!=119) cont++;   						//Incrementa contador
+		else{											//Quando contador = 120
 			cont=0;										//zera contador
+			Delay1KTCYx(3);
 			atualizaHora();								//Atualiza as variáveis da hora
-			pisca = 0;									//zera variavel pisca
+			
 		}
-		
-		if(cont == 120) pisca = 1;						//ativa variavel pisca, na metade do contador, (meio segundo)
 		atualizaDisplay();								//Função que verifica em que modo o relogio se encontra e atualiza display
 		
 	}

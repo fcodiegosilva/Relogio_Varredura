@@ -1,27 +1,27 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sun Nov 02 15:01:31 2014
+Linker Map File - Created Tue Nov 11 06:17:48 2014
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
                    .cinit    romdata   0x000006    program   0x00000e
-          .code_relógio.o       code   0x000014    program   0x00077c
-               _cinit_scn       code   0x000790    program   0x00009e
-              D1KTCYXCODE       code   0x00082e    program   0x000020
-                    .code       code   0x00084e    program   0x000020
-             _startup_scn       code   0x00086e    program   0x00001c
-           .code_pullen.o       code   0x00088a    program   0x000004
-           .code___init.o       code   0x00088e    program   0x000002
-         .romdata_c018i.o    romdata   0x000890    program   0x000000
-       .idata_relógio.o_i    romdata   0x000890    program   0x000020
-       .romdata_relógio.o    romdata   0x000890    program   0x000000
-        .romdata___init.o    romdata   0x000890    program   0x000000
-        .romdata_pullen.o    romdata   0x000890    program   0x000000
-        .idata___init.o_i    romdata   0x0008b0    program   0x000000
-        .idata_pullen.o_i    romdata   0x0008b0    program   0x000000
-            .code_c018i.o       code   0x0008b0    program   0x000000
-         .idata_c018i.o_i    romdata   0x0008b0    program   0x000000
+          .code_relógio.o       code   0x000014    program   0x000784
+               _cinit_scn       code   0x000798    program   0x00009e
+              D1KTCYXCODE       code   0x000836    program   0x000020
+                    .code       code   0x000856    program   0x000020
+             _startup_scn       code   0x000876    program   0x00001c
+           .code_pullen.o       code   0x000892    program   0x000004
+           .code___init.o       code   0x000896    program   0x000002
+         .romdata_c018i.o    romdata   0x000898    program   0x000000
+       .idata_relógio.o_i    romdata   0x000898    program   0x000020
+       .romdata_relógio.o    romdata   0x000898    program   0x000000
+        .romdata___init.o    romdata   0x000898    program   0x000000
+        .romdata_pullen.o    romdata   0x000898    program   0x000000
+        .idata___init.o_i    romdata   0x0008b8    program   0x000000
+        .idata_pullen.o_i    romdata   0x0008b8    program   0x000000
+            .code_c018i.o       code   0x0008b8    program   0x000000
+         .idata_c018i.o_i    romdata   0x0008b8    program   0x000000
  .config_300001_relógio.o    romdata   0x300001    program   0x000001
  .config_300002_relógio.o    romdata   0x300002    program   0x000001
  .config_300003_relógio.o    romdata   0x300003    program   0x000001
@@ -46,23 +46,23 @@ Linker Map File - Created Sun Nov 02 15:01:31 2014
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x0008af      
+                            0x000000    0x0008b7      
                             0x300001    0x300003      
                             0x300005    0x300006      
-            2229 out of 33048 program addresses used, program memory utilization is 6%
+            2237 out of 33048 program addresses used, program memory utilization is 6%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                    D1K_1   0x00083a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x000838    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-              Delay1KTCYx   0x00082e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            EnablePullups   0x00088a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
-                VarrerKey   0x000014    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-        _D1KTCYXCODE_0010   0x00083e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x000844    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x000842    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000840    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+              Delay1KTCYx   0x000836    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            EnablePullups   0x000892    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
+                VarrerKey   0x000014    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+        _D1KTCYXCODE_0010   0x000846    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x00084c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
          ___else_lbl00002   0x000034    program     static                          
          ___else_lbl00005   0x000056    program     static                          
          ___else_lbl00008   0x000078    program     static                          
@@ -101,35 +101,35 @@ Linker Map File - Created Sun Nov 02 15:01:31 2014
            ___if_lbl00036   0x0001c4    program     static                          
        ___return_lbl00000   0x0001d0    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00001   0x000888    program     static                          
-       ___return_lbl00002   0x00082c    program     static                          
-               __config_0   0x300001    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               __config_1   0x300002    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               __config_2   0x300003    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               __config_3   0x300005    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               __config_4   0x300006    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                   __init   0x00088e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-            __zero_memory   0x00084e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                _do_cinit   0x000790    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00001   0x000890    program     static                          
+       ___return_lbl00002   0x000834    program     static                          
+               __config_0   0x300001    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               __config_1   0x300002    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               __config_2   0x300003    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               __config_3   0x300005    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               __config_4   0x300006    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                   __init   0x000896    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+            __zero_memory   0x000856    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                _do_cinit   0x000798    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 _startup   0x00086e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-             ativaDisplay   0x0001ec    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-          atualizaDisplay   0x000622    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-             atualizaHora   0x000692    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                compare_l   0x000864    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                copy_loop   0x000802    program     static                          
-            copy_one_byte   0x000808    program     static                          
-                     done   0x00082c    program     static                          
-             done_copying   0x000816    program     static                          
-                inic_regs   0x0001d2    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                     loop   0x00087e    program     static                          
-                   loop_h   0x00085c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_l   0x000866    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     main   0x00071e    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               setRelogio   0x00055c    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                     test   0x0007aa    program     static                          
-             trataKeyboad   0x0003d0    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               zero_block   0x00085c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 _startup   0x000876    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+             ativaDisplay   0x0001ec    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+          atualizaDisplay   0x000622    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+             atualizaHora   0x000692    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                compare_l   0x00086c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                copy_loop   0x00080a    program     static                          
+            copy_one_byte   0x000810    program     static                          
+                     done   0x000834    program     static                          
+             done_copying   0x00081e    program     static                          
+                inic_regs   0x0001d2    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                     loop   0x000886    program     static                          
+                   loop_h   0x000864    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_l   0x00086e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     main   0x00073a    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               setRelogio   0x00055c    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                     test   0x0007b2    program     static                          
+             trataKeyboad   0x0003d0    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               zero_block   0x000864    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -384,28 +384,28 @@ Linker Map File - Created Sun Nov 02 15:01:31 2014
                      WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                  __tmp_0   0x000002       data     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                 aHoraDez   0x000076       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                aHoraUnid   0x000078       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  aMinDez   0x00007a       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                 aMinUnid   0x00007c       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                    atual   0x00007f       data     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
+                  __tmp_0   0x000002       data     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                 aHoraDez   0x000076       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                aHoraUnid   0x000078       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  aMinDez   0x00007a       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                 aMinUnid   0x00007c       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                    atual   0x00007f       data     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
                 curr_byte   0x000083       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x000085       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                  data_ptr   0x000087       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   dezena   0x000066       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  horaDez   0x00006a       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                 horaUnid   0x00006c       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                   minDez   0x00006e       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  minUnid   0x000070       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                     modo   0x000060       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                    pisca   0x000064       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
+                   dezena   0x000066       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  horaDez   0x00006a       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                 horaUnid   0x00006c       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                   minDez   0x00006e       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  minUnid   0x000070       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                     modo   0x000060       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                    pisca   0x000064       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
                      prom   0x000080       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   segDez   0x000072       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  segUnid   0x000074       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  setModo   0x000062       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  unidade   0x000068       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                        x   0x00007e       data     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
+                   segDez   0x000072       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  segUnid   0x000074       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  setModo   0x000062       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  unidade   0x000068       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                        x   0x00007e       data     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
 
 
 
@@ -414,7 +414,7 @@ Linker Map File - Created Sun Nov 02 15:01:31 2014
                 ---------  ---------  ---------  --------- ---------                
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
        ___return_lbl00000   0x000004    program     static                          
-                VarrerKey   0x000014    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
+                VarrerKey   0x000014    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
          ___else_lbl00002   0x000034    program     static                          
            ___if_lbl00001   0x000044    program     static                          
            ___if_lbl00003   0x000044    program     static                          
@@ -452,62 +452,62 @@ Linker Map File - Created Sun Nov 02 15:01:31 2014
            ___if_lbl00034   0x0001c4    program     static                          
            ___if_lbl00036   0x0001c4    program     static                          
        ___return_lbl00000   0x0001d0    program     static                          
-                inic_regs   0x0001d2    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-             ativaDisplay   0x0001ec    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-             trataKeyboad   0x0003d0    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               setRelogio   0x00055c    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-          atualizaDisplay   0x000622    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-             atualizaHora   0x000692    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                     main   0x00071e    program     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                _do_cinit   0x000790    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x0007aa    program     static                          
-                copy_loop   0x000802    program     static                          
-            copy_one_byte   0x000808    program     static                          
-             done_copying   0x000816    program     static                          
-                     done   0x00082c    program     static                          
-       ___return_lbl00002   0x00082c    program     static                          
-              Delay1KTCYx   0x00082e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x000838    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x00083a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x00083e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x000844    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x00084e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               zero_block   0x00085c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_h   0x00085c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                compare_l   0x000864    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_l   0x000866    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 _startup   0x00086e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x00087e    program     static                          
-       ___return_lbl00001   0x000888    program     static                          
-            EnablePullups   0x00088a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
-                   __init   0x00088e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __config_0   0x300001    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               __config_1   0x300002    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               __config_2   0x300003    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               __config_3   0x300005    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-               __config_4   0x300006    program     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
+                inic_regs   0x0001d2    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+             ativaDisplay   0x0001ec    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+             trataKeyboad   0x0003d0    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               setRelogio   0x00055c    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+          atualizaDisplay   0x000622    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+             atualizaHora   0x000692    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                     main   0x00073a    program     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                _do_cinit   0x000798    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0007b2    program     static                          
+                copy_loop   0x00080a    program     static                          
+            copy_one_byte   0x000810    program     static                          
+             done_copying   0x00081e    program     static                          
+                     done   0x000834    program     static                          
+       ___return_lbl00002   0x000834    program     static                          
+              Delay1KTCYx   0x000836    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000840    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x000842    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x000846    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x00084c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x000856    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               zero_block   0x000864    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_h   0x000864    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                compare_l   0x00086c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_l   0x00086e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 _startup   0x000876    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x000886    program     static                          
+       ___return_lbl00001   0x000890    program     static                          
+            EnablePullups   0x000892    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
+                   __init   0x000896    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __config_0   0x300001    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               __config_1   0x300002    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               __config_2   0x300003    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               __config_3   0x300005    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+               __config_4   0x300006    program     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
                      SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                 __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                  __tmp_0   0x000002       data     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
+                  __tmp_0   0x000002       data     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
             DelayCounter1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
-                     modo   0x000060       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  setModo   0x000062       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                    pisca   0x000064       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                   dezena   0x000066       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  unidade   0x000068       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  horaDez   0x00006a       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                 horaUnid   0x00006c       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                   minDez   0x00006e       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  minUnid   0x000070       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                   segDez   0x000072       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  segUnid   0x000074       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                 aHoraDez   0x000076       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                aHoraUnid   0x000078       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                  aMinDez   0x00007a       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                 aMinUnid   0x00007c       data     extern C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                        x   0x00007e       data     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
-                    atual   0x00007f       data     static C:\Users\Diego Silva\Desktop\Relogio\relógio.c
+                     modo   0x000060       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  setModo   0x000062       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                    pisca   0x000064       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                   dezena   0x000066       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  unidade   0x000068       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  horaDez   0x00006a       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                 horaUnid   0x00006c       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                   minDez   0x00006e       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  minUnid   0x000070       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                   segDez   0x000072       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  segUnid   0x000074       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                 aHoraDez   0x000076       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                aHoraUnid   0x000078       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                  aMinDez   0x00007a       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                 aMinUnid   0x00007c       data     extern D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                        x   0x00007e       data     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
+                    atual   0x00007f       data     static D:\OneDrive\Estudos\S5\Embarcados\Relogio_Varredura\relógio.c
                      prom   0x000080       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                 curr_byte   0x000083       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x000085       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
